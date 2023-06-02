@@ -1,0 +1,20 @@
+<%- include("_header") -%>
+
+  <div class="col-md-4 mt-5 bg-light rounded" style="margin-top: 3%; margin-left: 25%; max-width: 800px;">
+    <h5 class="text-left font-weight-bold" style="padding-top: 10px;">Editar Estratégia</h5>
+    <hr class="bg-light">
+    <h5 class="text-center text-success"></h5>
+    <form action="/editEstrategia/<%=model.Estrategia_ID %>" method="post" id="form-box" class="p-2 form-horizontal">
+
+      <%- include("_editorEstrategia") -%>
+
+      <div class="form-group" style="text-align: right; margin-right: 15px;">
+        <input type="submit" value="Salvar" class="btn btn-success btn-primary" style="margin-right: 15px;"/>
+        <a class="btn btn-outline-dark cancel" href="/Estrategia">Cancelar</a>
+      </div>
+    </form>
+</div>
+<br>
+<br>
+<br>
+  <%- include("_footer") -%>

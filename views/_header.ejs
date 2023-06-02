@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=100%, initial-scale=1, shrink-to-fit=no">
+  <title>FutballAnalysisApp</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/local2.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="width:100vw;">
+ 
+  <div style="width: 100vw; text-align: center;"><img src="/images/background_cent.png"></div>
+  <div class="container" style="margin-left:5%;margin-right:5%;min-width:100%;">
+
+<!--     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Futebol ao Vivo</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/data">Jogos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/estrategia">Estratégias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/livres">Sobre</a>
+        </li>
+      </ul>
+    </nav> -->
+
+<!--   <section >
+    <nav >
+      <a href="/">Home</a>
+      <a href="/data">Jogos</a>
+      <a href="/estrategia">Estratégias</a>
+      <a href="/livres">Sobre</a>
+      <div class="animation start-home"></div>
+    </nav>
+  </section> -->
+
+  <nav class="slidemenu">
+  
+    <!-- Item 1 -->
+    <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" <%= page==='home' ? "checked" : "" %>  onclick="window.location.href = '/index'"/>
+    <label for="slide-item-1"><p class="icon">♬</p><span>Home</span></label>
+    
+    <!-- Item 2 -->
+    <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" <%= page==='jogos' ? "checked" : "" %>  onclick="window.location.href = '/data'"/>
+    <label for="slide-item-2"><p class="icon">★</p><span>Jogos</span></label>
+    
+    <!-- Item 3 -->
+    <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" <%= page==='estrategia' ? "checked" : "" %>  onclick="window.location.href = '/estrategia'"/>
+    <label for="slide-item-3"><p class="icon">✈</p><span>Estratégias</span></label>
+    
+   
+    <div class="clear"></div>
+    
+    <!-- Bar -->
+<!--     <div class="slider">
+      <div class="bar"></div>
+    </div> -->
+    
+  </nav>

@@ -1,0 +1,138 @@
+
+
+  html,
+  body {
+    min-height: 100vh;
+    position: relative;
+    max-width: 90%;
+  }
+
+  body {
+    background-color: #dfe5ed;
+  }
+
+  footer {
+    background-color: dfe5ed;
+    position: absolute;
+    bottom: 0;
+    max-width: 90%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+
+  .slide-toggle {
+    display: none;
+  }
+
+  .slidemenu {
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+
+  .slidemenu label {
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+
+  }
+
+  .slidemenu label:hover {
+    cursor: pointer;
+    color: #663;
+  }
+
+  .slidemenu label span {
+    display: block;
+    padding: 10px;
+  }
+
+  .slidemenu label .icon {
+    font-size: 20px;
+    border: solid 2px #333;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+
+  /*Animations*/
+  .slidemenu label,
+  .slider .bar {
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+
+  /*Toggle*/
+
+  .slidemenu .slide-toggle:checked+label {
+    opacity: 1;
+  }
+
+
+
+  .slidemenu #slide-item-1:checked~.slider .bar {
+    margin-left: 0;
+  }
+
+  .slidemenu #slide-item-2:checked~.slider .bar {
+    margin-left: 33%;
+  }
+
+  .slidemenu #slide-item-3:checked~.slider .bar {
+    margin-left: 67%;
+  }
+
+  .slidemenu #slide-item-4:checked~.slider .bar {
+    margin-left: 90%;
+  }
+
+  .box {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    background-color: white;
+  }
+
+  fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1em 0 1em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+  }
+
+  legend.scheduler-border {
+    font-size: 0.8em !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+  }
+
+  .table td, .table th, .table tr {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #2b2e31;
+  }
+  
+  .table thead tr th{
+    border-bottom: 1px solid #000000;
+  }
+
+  footer {
+    margin-top: auto;
+  }

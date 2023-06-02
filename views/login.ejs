@@ -1,0 +1,77 @@
+<!-- <!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=100%, initial-scale=1, shrink-to-fit=no">
+    <title>FutballAnalysisApp</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/local2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+
+<body style="width: 100%; margin:0">
+ -->
+ <%- include("_header") -%>
+    <div>
+        <div style="margin-top: 3%; margin-left: 50%;">
+            <div class="col-md-4 mt-5 bg-light rounded">
+                <h1 class="text-center font-weight-bold text-primary">Login</h1>
+                <hr class="bg-light">
+                <h5 class="text-center text-success"></h5>
+                <form action="/login" method="post" id="form-box" class="p-2">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        </div>
+                        <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="btn btn-primary btn-block" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("_footer") -%>
+
+
+<!-- <!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=100%, initial-scale=1, shrink-to-fit=no">
+    <title>FutballAnalysisApp</title>
+    <link rel="stylesheet" href="/css/local3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body style="width: 100%; margin:0">
+
+<div class="testbox">
+  <h1>Login</h1>
+
+  <form action="/login">
+    <hr>
+    <label id="icon" for="name"><i class="icon-envelope "></i></label>
+    <input type="text" name="name" id="name" placeholder="Email" required/>
+    <label id="icon" for="name"><i class="icon-user"></i></label>
+    <input type="text" name="nome" id="name" placeholder="Nome" required/>
+    <label id="icon" for="nome"><i class="icon-shield"></i></label>
+    <input type="password" name="password" id="name" placeholder="Senha" required/>
+    <div class="form-group">
+        <a href="#" class="button">Enviar</a>
+    </div>
+</form>
+</div>
+<%- include("_footer") -%> 
+ -->
